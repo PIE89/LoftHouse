@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOFT</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      @@include('blocks/header.html')
+    </header>
+    <main>
+      @@include('blocks/testimonials.html') @@include('blocks/apartments.html')
+      @@include('blocks/cta.html') @@include('blocks/video.html')
+      @@include('blocks/map.html') @@include('blocks/cta-form.html')
+    </main>
+    <footer class="footer">
+      @@include('blocks/footer.html')
+    </footer>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=c1de6720-225c-4127-834c-fa09db1fa9a7&lang=ru_RU"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

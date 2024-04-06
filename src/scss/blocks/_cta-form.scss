@@ -1,0 +1,36 @@
+.cta-form {
+  padding-bottom: 180px;
+
+  @media (max-width: 599px) {
+    padding-bottom: 50px;
+  }
+}
+
+.cta-form__title {
+  margin-bottom: 38px;
+}
+
+.cta-form__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  place-items: center;
+
+  @media (max-width: 959px) {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .form__text {
+    grid-area: -1;
+    margin-right: 5px;
+
+    @media (max-width: 959px) {
+      grid-area: 4;
+
+      & br {
+        display: block;
+      }
+    }
+  }
+}

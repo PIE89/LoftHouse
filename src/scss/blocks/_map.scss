@@ -1,0 +1,53 @@
+.map {
+  padding: 180px 0;
+  position: relative;
+
+  @media (max-width: 959px) {
+    padding: 90px 0;
+  }
+
+  @media (max-width: 599px) {
+    padding: 40px 0;
+  }
+
+  &::before {
+    content: "V";
+    position: absolute;
+    z-index: -1;
+    width: 268px;
+    height: 507px;
+    top: 16.744%;
+    left: 1.854%;
+
+    color: rgb(255, 255, 255, 0.02);
+    font-family: var(--font-titles);
+    font-size: 400px;
+    font-weight: 700;
+    line-height: 1.33;
+
+    @media (max-width: 599px) {
+      content: unset;
+    }
+  }
+}
+
+.map__title {
+  margin-bottom: 87px;
+
+  @media (max-width: 959px) {
+    margin-bottom: 44px;
+  }
+
+  @media (max-width: 599px) {
+    margin-bottom: 20px;
+  }
+}
+
+.map__block {
+  background-color: rgb(98, 98, 98);
+  height: 358px;
+
+  @media (max-width: 599px) {
+    height: 200px;
+  }
+}

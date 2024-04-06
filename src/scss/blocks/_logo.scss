@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+
+  & span {
+    white-space: nowrap;
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1.44px;
+  }
+}
+
+.logo__title {
+  font-family: var(--font-logo);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+}

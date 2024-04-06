@@ -1,0 +1,23 @@
+.advantage {
+  text-align: center;
+}
+
+.advantage__img {
+  display: inline;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 53px;
+
+  @media (max-width: 599px) {
+    margin-bottom: 25px;
+  }
+}
+.advantage__description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.35;
+
+  @media (max-width: 599px) {
+    font-size: 14px;
+  }
+}

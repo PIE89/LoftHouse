@@ -1,0 +1,65 @@
+.cta {
+  padding: 180px 0;
+
+  background: linear-gradient(
+      180deg,
+      #242b33 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      #242b33 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+    url("./../img/bg/cta@2x.jpg"), #c4c4c4;
+
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 959px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 599px) {
+    padding: 30px 0;
+  }
+}
+
+.cta__title {
+  margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @media (max-width: 959px) {
+    grid-template-columns: unset;
+  }
+}
+
+.cta__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @media (max-width: 959px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 599px) {
+    font: 12px;
+  }
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 35px;
+  place-items: center;
+
+  @media (max-width: 959px) {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,10 @@
+<section class="apartments" id="apartments">
+  <div class="container">
+    <div class="apartments__title">
+      <h2 class="title-2">Наши квартиры</h2>
+    </div>
+    <div class="apartments__wrapper">
+      @@loop('./../templates/flat.html', './data/flat.json')
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+.link {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -35px;
+    top: 0px;
+    width: 21px;
+    height: 21px;
+
+    background-repeat: no-repeat;
+  }
+
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--address {
+    &::before {
+      background-image: url("./../img/icons/point.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-image: url("./../img/icons/phone.svg");
+    }
+  }
+
+  @media (max-width: 960px) {
+    font-size: 12px;
+  }
+}
